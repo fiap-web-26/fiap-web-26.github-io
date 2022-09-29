@@ -14,15 +14,8 @@
             
             } 
         
-            body{
-            
-            background-image: linear-gradient( #e1e1e1, #fff);
-            background-image: url(../images/imagesc6bank/hero-bg-xs.webp);
-            background-repeat: no-repeat;
-            background-size: auto;
-            background-position: center center;
-            
-        }
+           
+        
     </style>
 </head>
 
@@ -55,14 +48,22 @@
     <section class="full-banner-form">
         <div class="container-login">
         
-            <form class="form-login">
+            <form class="form-login" method="post"></form>
+        
             <label for="login">
                 CPF:
-                <input type="text" name="login" id="login" placeholder="Digite o CPF">
-            </label>
-        <label for="senha">
+            <input required type="text" name="login"  id="login" placeholder="Digite o CPF" oninvalid="this.setCustomValidity('preencha o campo cpf')" oninput="this.setCustomValidity('')"/>
+
+</label>
+       
+            <label for="password">
         Senha:
-            <input type="password" name="login" id="login" placeholder="Digite a senha" />
+            <input required type="password" name="password" id="password" 
+               placeholder="Digite a senha" 
+               pattern="(?=./d)(?=.*[a-z])(?=.*[A-Z]).{8,}"> 
+               title="A senha deve conter, ao menos uma letra maíuscula, uma letra minúscula, um número e pelo menos 8 caracteres"</title>
+ 
+            
         </label>
         <button type="submit">continuar</button>
         <p><a href="#">Esqueci a senha</a></p>
@@ -100,3 +101,4 @@
 </body>
 
 </html>
+<script type="text/javascript" src="assets/js/main.js"></script>
