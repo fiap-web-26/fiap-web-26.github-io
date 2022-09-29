@@ -38,5 +38,9 @@ let user = {
     },
     usandoNominal () {
         console.log("Meu nome é", this.name, "Nominal Function");
+
+    
     }
 }
+user.usandoArrow();
+user.usandoNominal();
