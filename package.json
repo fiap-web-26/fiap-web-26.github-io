@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "sass --watch ./assets/scss:./assets/css --style compressed --no-source-map",
-     "git": "git add --all && git commit -m\"Deploy\" && git push origin master && echo \"Deployed\""
-
-     
+    "git": "git add --all && git commit -m\"Deploy\" && git push origin master && echo \"Deployed\""
   },
   "repository": {
     "type": "git",
@@ -19,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Sarah2603/Projeto-C6bank/issues"
   },
-  "homepage": "https://github.com/Sarah2603/Projeto-C6bank#readme"
+  "homepage": "https://github.com/Sarah2603/Projeto-C6bank#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  }
 }
